@@ -75,7 +75,7 @@ echo $commentClass;
         <div class="cancel-comment-reply"><span class="response"><?php _e('發表新評論'); ?></span><span class="cancel-reply"><?php $comments->cancelReply(); ?></span></div>
         <form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form">
             <?php if($this->user->hasLogin()): ?>
-            <p style="padding-top:10px;"><?php _e('已登入: '); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
+            <p style="padding-top:10px;"><?php _e('已登入：'); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>，<a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
             <?php else: ?>
                 <?php if($this->remember('author',true) != "" && $this->remember('mail',true) != "") : ?> 
                 
@@ -93,7 +93,7 @@ echo $commentClass;
                </div>
                 <?php endif; ?>
 				
-            <textarea name="text" id="textarea" class="form-control" onkeydown="if(event.ctrlKey&&event.keyCode==13){document.getElementById('misubmit').click();return false};" placeholder="<?php _e('在这里输入你的评论(Ctrl/Cmd+Enter也可以提交)...'); ?>" required ><?php $this->remember('text',false); ?></textarea>
+            <textarea name="text" id="textarea" class="form-control" onkeydown="if(event.ctrlKey&&event.keyCode==13){document.getElementById('misubmit').click();return false};" placeholder="<?php _e('在這裏輸入您的評論（Ctrl/Cmd + Enter 也可以提交）……'); ?>" required ><?php $this->remember('text',false); ?></textarea>
             <button type="submit" class="submit" id="misubmit"><?php _e('提交評論'); ?></button>
             <?php $security = $this->widget('Widget_Security'); ?>
             <input type="hidden" name="_" value="<?php echo $security->getToken($this->request->getReferer())?>">
