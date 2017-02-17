@@ -1,5 +1,5 @@
 		<footer id="footer" class="inner">
-			&copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a> 由 <a href="http://www.typecho.org" target="_blank">Typecho</a> 强力驱动 Theme is <a href="https://uefeng.com" target="_blank">Junichi</a>
+			&copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a> 由 <a href="http://www.typecho.org" target="_blank">Typecho</a> 強力驅動 Theme is <a href="https://uefeng.com" target="_blank">Junichi</a>
 		</footer>
 	</div>
 </div>
@@ -8,7 +8,7 @@
 <script src="<?php $this->options->themeUrl('js/functions.js'); ?>"></script>
 <?php if(!empty($this->options->search_form) && in_array('Pjax', $this->options->search_form)): ?>
 <script src="<?php $this->options->themeUrl('js/prism.js'); ?>" data-no-instant></script>
-<script src="//cdn.staticfile.org/instantclick/3.0.1/instantclick.min.js" data-no-instant></script>
+<script src="<?php $this->options->themeUrl('js/instantclick.min.js'); ?>" data-no-instant></script>
 <script data-no-instant>
 	InstantClick.on('change', function(isInitialLoad) {
 		if (isInitialLoad === false) {
