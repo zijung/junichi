@@ -3,6 +3,13 @@
 <html>
 <head>
 <meta charset="<?php $this->options->charset(); ?>">
+<title><?php $this->archiveTitle(array(
+	'category' =>  _t(' %s '),
+	'search'   =>  _t(' %s '),
+	'tag'      =>  _t(' %s '),
+	'author'   =>  _t(' %s ')
+	), '', ' - '); ?><?php $this->options->title(); ?></title>
+</head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="renderer" content="webkit">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -12,13 +19,6 @@
 <?php $this->header('keywords=&generator=&template=&pingback=&xmlrpc=&wlw=&commentReply=&rss1=&rss2=&atom='); ?>
 <?php if ($this->options->favicon) { ?><link rel="shortcut icon" href="<?php $this->options->favicon(); ?>"><?php } ?>
 <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css?v=170120'); ?>">
-<title><?php $this->archiveTitle(array(
-	'category' =>  _t(' %s '),
-	'search'   =>  _t(' %s '),
-	'tag'      =>  _t(' %s '),
-	'author'   =>  _t(' %s ')
-	), '', ' - '); ?><?php $this->options->title(); ?></title>
-</head>
 <body>
 <!--[if lt IE 9]>
 	<div class="browsehappy" role="dialog">您正在使用一個過時的瀏覽器，爲了您的正常訪問，請<a href="http://browsehappy.com/" target="_blank">升級您的瀏覽器</a></div>
