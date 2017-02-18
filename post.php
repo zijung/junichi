@@ -17,7 +17,7 @@
 						最後更新於&nbsp;<span class="date"><?php echo date('Y-m-d  H:i:s' , $this->modified); ?></span><?php if ($this->tags) { ?>&nbsp;並被添加到「<?php $this->tags(' ', true, ''); ?>」標籤<?php } ?>，已有 <?php get_post_view($this) ?> 位同學讀過。
 					</p>
 					<p class="copyright-info">
-						本站使用「<a target="_blank" href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW">署名 4.0 國際</a>」創作共享協議，可自由轉載、引用，但需署名作者切註明文章出處
+						本站使用「<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW">知識共享署名-非商業性使用-相同方式共享 4.0 國際許可協議</a>」進行許可
 					</p>
 					<p>
 						<?php $this->related(5)->to($relatedPosts); ?>
