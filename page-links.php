@@ -13,11 +13,12 @@ $this->need('header.php'); ?>
 					<h1 class="title"><?php $this->title() ?></h1>
 					<div class="entry-content">	
 						<?php $all = Typecho_Plugin::export();?>
-						<?php if (array_key_exists('Links', $all['activated'])) : ?>
+						<?php if (array_key_exists('Links', $all['activated'])) { ?>
 							<ul>
 							<?php Links_Plugin::output('SHOW_TEXT'); ?>
-							</ul> 
-						<?php endif; ?> 
+							</ul>
+						<?php } ?>
+						<?php $this->content(); ?>
 					</div>
 				</article>
 			</div>
