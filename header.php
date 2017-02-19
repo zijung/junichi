@@ -1,5 +1,5 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="<?php $this->options->charset(); ?>">
@@ -40,30 +40,30 @@
 			<nav id="sub-nav">
 				<div class="social">
 					<?php if ($this->options->socialgithub): ?>
-					<a class="social github" target="blank" href="<?php $this->options->socialgithub(); ?>"><i class="iconfont icon-github"></i></a>
+					<a class="social github" target="_blank" href="<?php $this->options->socialgithub(); ?>"><i class="iconfont icon-github"></i></a>
 					<?php endif; ?>
 					<?php if ($this->options->socialgoogle): ?>
-					<a class="social google-plus" target="blank" href="<?php $this->options->socialgoogle(); ?>"><i class="iconfont icon-google"></i></a>
+					<a class="social google-plus" target="_blank" href="<?php $this->options->socialgoogle(); ?>"><i class="iconfont icon-google"></i></a>
 					<?php endif; ?>
-					<a class="social rss" target="blank" href="<?php $this->options->siteUrl(); ?>feed/"><i class="iconfont icon-rss"></i></a>
 					<?php if ($this->options->socialtwitter): ?>
-					<a class="social twitter" target="blank" href="<?php $this->options->socialtwitter(); ?>"><i class="iconfont icon-twitter"></i></a>
+					<a class="social twitter" target="_blank" href="<?php $this->options->socialtwitter(); ?>"><i class="iconfont icon-twitter"></i></a>
 					<?php endif; ?>
 					<?php if ($this->options->socialwechat): ?>
-					<a id="wechat-toggle" class="social wechat" href="javascript:"><i class="iconfont icon-wechat"></i></a>
+					<a id="wechat-toggle" class="social wechat"><i class="iconfont icon-wechat"></i></a>
 					<?php endif; ?>
 					<?php if ($this->options->socialqq): ?>
-					<a class="social qq" target="blank" href="tencent://message/?uin=<?php $this->options->socialqq(); ?>&Site=junichi&Menu=yes"><i class="iconfont icon-qq"></i></a>
+					<a class="social qq" target="_blank" href="tencent://message/?uin=<?php $this->options->socialqq(); ?>&Site=junichi&Menu=yes"><i class="iconfont icon-qq"></i></a>
 					<?php endif; ?>
 					<?php if ($this->options->socialweibo): ?>
-					<a class="social weibo" target="blank" href="<?php $this->options->socialweibo(); ?>"><i class="iconfont icon-weibo"></i></a>
+					<a class="social weibo" target="_blank" href="<?php $this->options->socialweibo(); ?>"><i class="iconfont icon-weibo"></i></a>
 					<?php endif; ?>
 					<?php if ($this->options->socialmusic): ?>
-					<a class="social music" target="blank" href="<?php $this->options->socialmusic(); ?>"><i class="iconfont icon-music"></i></a>
+					<a class="social music" target="_blank" href="<?php $this->options->socialmusic(); ?>"><i class="iconfont icon-music"></i></a>
 					<?php endif; ?>
-					<a id="search-toggle" class="social search" href="javascript:"><i class="iconfont icon-sousuo"></i></a>
+					<a class="social rss" target="_blank" href="<?php $this->options->siteUrl(); ?>feed/"><i class="iconfont icon-rss"></i></a>
+					<a id="search-toggle" class="social search"><i class="iconfont icon-sousuo"></i></a>
 					<form id="search" method="post" action="/" role="search">
-						<input type="text" class="input" name="s" required="true" placeholder="...Search">
+						<input type="text" class="input" name="s" required="true" placeholder="搜索">
 					</form>
 					<div id="wechat">
 						<img src="<?php $this->options->socialwechat(); ?>" />
