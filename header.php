@@ -12,9 +12,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="renderer" content="webkit">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta http-equiv="Cache-Control" content="no-transform"/>
-<meta http-equiv="Cache-Control" content="no-siteapp"/>
-<meta name="keywords" content="<?php $this->keywords() ?>" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name="keywords" content="<?php $this->keywords() ?>">
 <?php $this->header('keywords=&generator=&template=&pingback=&xmlrpc=&wlw=&commentReply=&rss1=&rss2=&atom='); ?>
 <?php if ($this->options->favicon) { ?><link rel="shortcut icon" href="<?php $this->options->favicon(); ?>"><?php } ?>
 <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css?v=170120'); ?>">
@@ -66,7 +66,7 @@
 						<input type="text" class="input" name="s" required="true" placeholder="搜索">
 					</form>
 					<div id="wechat">
-						<img src="<?php $this->options->socialwechat(); ?>" />
+						<img src="<?php $this->options->socialwechat(); ?>">
 					</div>
 				</div>
 			</nav>

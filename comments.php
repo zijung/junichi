@@ -37,7 +37,7 @@ echo $commentClass;
             $avatar = $host . $url . $hash . '?s=' . $size . '&r=' . $rating . '&d=';
         ?>
 
-        <img class="avatar" src="<?php echo $avatar ?>" alt="<?php echo $comments->author; ?>" width="<?php echo $size ?>" height="<?php echo $size ?>" />
+        <img class="avatar" src="<?php echo $avatar ?>" alt="<?php echo $comments->author; ?>" width="<?php echo $size ?>" height="<?php echo $size ?>">
         <div class="comment-main">
             <p class="comment-at"><?php get_comment_at($comments->coid)?></p>
             <?php $comments->content(); ?>
